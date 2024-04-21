@@ -37,7 +37,7 @@ public class InputForm {
         TextField alamatField = new TextField();
         TextField nikField = new TextField();
         DatePicker tanggalLahirField = new DatePicker();
-        tanggalLahirField.setPromptText("YYYY-MM-dd");
+        tanggalLahirField.setPromptText("YYYY/MM/dd");
 
         nikField.textProperty().addListener((observable, oldValue, newValue) -> {
             if (!newValue.matches("\\d*")) {

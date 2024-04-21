@@ -48,7 +48,7 @@ public class App extends Application {
         TableColumn<Pasien, String> tanggalLahirCol = new TableColumn<>("Tanggal Lahir");
         tanggalLahirCol.setCellValueFactory(cellData -> {
             LocalDate tanggalLahir = cellData.getValue().getTanggalLahir();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MMM-dd");
             String formattedDate = tanggalLahir.format(formatter);
             return new SimpleStringProperty(formattedDate);
         });
